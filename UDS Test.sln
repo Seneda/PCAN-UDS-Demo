@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDSClient", "UDSClient\UDSClient.csproj", "{E4841108-00DF-426D-B153-A0E588913E79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDSServer", "UDSServer\UDSServer.csproj", "{43E71854-1D72-45DA-87D9-9053B2F710A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCANUDS", "PCANUDS\PCANUDS.csproj", "{C2307135-8EEA-49C6-B24F-40A8D923529B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4841108-00DF-426D-B153-A0E588913E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4841108-00DF-426D-B153-A0E588913E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4841108-00DF-426D-B153-A0E588913E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4841108-00DF-426D-B153-A0E588913E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43E71854-1D72-45DA-87D9-9053B2F710A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E71854-1D72-45DA-87D9-9053B2F710A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E71854-1D72-45DA-87D9-9053B2F710A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E71854-1D72-45DA-87D9-9053B2F710A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2307135-8EEA-49C6-B24F-40A8D923529B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2307135-8EEA-49C6-B24F-40A8D923529B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2307135-8EEA-49C6-B24F-40A8D923529B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2307135-8EEA-49C6-B24F-40A8D923529B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13510496-D0F9-4AFC-A4F6-D5CB0AAC8736}
+	EndGlobalSection
+EndGlobal
