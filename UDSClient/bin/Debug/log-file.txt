@@ -1904,3 +1904,153 @@ System.ArgumentException: Destination array is not long enough to copy all the i
 	LEN: 1, DATA: [77]
 15:18:08,376 [1] DEBUG PCUClient - ALL Transmissions succeeded !
 15:18:08,377 [1] DEBUG PCUClient - Press <Enter> to quit...
+16:59:29,245 [1] INFO PCUClient - Starting UDS Client Test
+16:59:29,455 [1] DEBUG PCUClient - Initialize UDS: PUDS_ERROR_OK (chan. 0x51)
+16:59:29,457 [1] DEBUG PCUClient -   Set ServerAddress: PUDS_ERROR_OK (0xf1)
+16:59:29,458 [1] DEBUG PCUClient -   Set TIMEOUT_REQUEST: PUDS_ERROR_OK (2000)
+16:59:29,460 [1] DEBUG PCUClient -   Set TIMEOUT_REQUEST: PUDS_ERROR_OK (2000)
+16:59:33,289 [1] INFO PCUClient - *** UDS Service: RequestDownload ***
+16:59:33,290 [1] DEBUG PCUClient - SvcRequestDownload: PUDS_ERROR_OK
+16:59:35,367 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_NO_MESSAGE
+16:59:35,368 [1] WARN PCUClient - Service : RequestDownload did not get a positive UDS Response
+16:59:35,368 [1] WARN PCUClient - SendServiceRequestDownload Failed
+16:59:35,369 [1] DEBUG PCUClient - ALL Transmissions succeeded !
+16:59:35,369 [1] DEBUG PCUClient - Press <Enter> to quit...
+17:00:08,125 [1] INFO PCUClient - Starting UDS Client Test
+17:00:08,345 [1] DEBUG PCUClient - Initialize UDS: PUDS_ERROR_OK (chan. 0x51)
+17:00:08,346 [1] DEBUG PCUClient -   Set ServerAddress: PUDS_ERROR_OK (0xf1)
+17:00:08,346 [1] DEBUG PCUClient -   Set TIMEOUT_REQUEST: PUDS_ERROR_OK (2000)
+17:00:08,347 [1] DEBUG PCUClient -   Set TIMEOUT_REQUEST: PUDS_ERROR_OK (2000)
+17:00:09,983 [1] INFO PCUClient - *** UDS Service: RequestDownload ***
+17:00:09,985 [1] DEBUG PCUClient - SvcRequestDownload: PUDS_ERROR_OK
+17:00:10,988 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_CAN_ERROR
+17:00:10,989 [1] WARN PCUClient - Service : RequestDownload did not get a positive UDS Response
+17:00:10,989 [1] WARN PCUClient - SendServiceRequestDownload Failed
+17:00:10,990 [1] DEBUG PCUClient - ALL Transmissions succeeded !
+17:00:10,990 [1] DEBUG PCUClient - Press <Enter> to quit...
+17:00:32,944 [1] INFO PCUClient - Starting UDS Client Test
+17:00:33,190 [1] DEBUG PCUClient - Initialize UDS: PUDS_ERROR_OK (chan. 0x51)
+17:00:33,191 [1] DEBUG PCUClient -   Set ServerAddress: PUDS_ERROR_OK (0xf1)
+17:00:33,191 [1] DEBUG PCUClient -   Set TIMEOUT_REQUEST: PUDS_ERROR_OK (2000)
+17:00:33,191 [1] DEBUG PCUClient -   Set TIMEOUT_REQUEST: PUDS_ERROR_OK (2000)
+17:00:38,401 [1] INFO PCUClient - *** UDS Service: RequestDownload ***
+17:00:38,403 [1] DEBUG PCUClient - SvcRequestDownload: PUDS_ERROR_OK
+17:00:38,425 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:00:38,427 [1] INFO PCUClient - UDS REQUEST   TPUDSMsg : SI:PUDS_SI_RequestDownload, SA:F1, TA:01, RA:0x00, Result:PUDS_RESULT_N_OK - OK !
+	LEN: 11, DATA: [34-00-44-00-01-00-20-00-00-00-80]
+17:00:38,428 [1] INFO PCUClient - UDS RESPONSE  TPUDSMsg : SI:RESPONSE_PUDS_SI_RequestDownload, SA:01, TA:F1, RA:0x00, Result:PUDS_RESULT_N_OK - OK !
+	LEN: 4, DATA: [74-20-00-22]
+17:00:38,428 [1] INFO PCUClient - Max Block Size: 34
+17:00:48,234 [1] DEBUG PCUClient - SvcTransferData: PUDS_ERROR_OK
+17:00:48,298 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:00:48,298 [1] DEBUG PCUClient - Calculating a checksum for the transmitted data
+17:00:48,298 [1] INFO PCUClient - Checksum matches 0x31==0x31
+17:00:48,298 [1] INFO PCUClient - blockIndex matches 0x01==0x01
+17:00:48,298 [1] DEBUG PCUClient - SvcTransferData: PUDS_ERROR_OK
+17:00:48,363 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:00:48,363 [1] DEBUG PCUClient - Calculating a checksum for the transmitted data
+17:00:48,363 [1] INFO PCUClient - Checksum matches 0xB5==0xB5
+17:00:48,364 [1] INFO PCUClient - blockIndex matches 0x02==0x02
+17:00:48,364 [1] DEBUG PCUClient - SvcTransferData: PUDS_ERROR_OK
+17:00:48,428 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:00:48,428 [1] DEBUG PCUClient - Calculating a checksum for the transmitted data
+17:00:48,429 [1] INFO PCUClient - Checksum matches 0x39==0x39
+17:00:48,429 [1] INFO PCUClient - blockIndex matches 0x03==0x03
+17:00:48,431 [1] DEBUG PCUClient - SvcTransferData: PUDS_ERROR_OK
+17:00:48,484 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:00:48,484 [1] DEBUG PCUClient - Calculating a checksum for the transmitted data
+17:00:48,485 [1] INFO PCUClient - Checksum matches 0xA1==0xA1
+17:00:48,486 [1] INFO PCUClient - blockIndex matches 0x04==0x04
+17:00:48,488 [1] INFO PCUClient - *** UDS Service: RequestTransferExit ***
+17:00:48,489 [1] DEBUG PCUClient - SvcRequestTransferExit: PUDS_ERROR_OK
+17:00:48,500 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:00:48,500 [1] INFO PCUClient - UDS REQUEST   TPUDSMsg : SI:PUDS_SI_RequestTransferExit, SA:F1, TA:01, RA:0x00, Result:PUDS_RESULT_N_OK - OK !
+	LEN: 1, DATA: [37]
+17:00:48,506 [1] INFO PCUClient - UDS RESPONSE  TPUDSMsg : SI:RESPONSE_PUDS_SI_RequestTransferExit, SA:01, TA:F1, RA:0x00, Result:PUDS_RESULT_N_OK - OK !
+	LEN: 1, DATA: [77]
+17:00:48,515 [1] DEBUG PCUClient - ALL Transmissions succeeded !
+17:00:48,516 [1] DEBUG PCUClient - Press <Enter> to quit...
+17:02:07,639 [1] INFO PCUClient - Starting UDS Client Test
+17:02:07,843 [1] DEBUG PCUClient - Initialize UDS: PUDS_ERROR_OK (chan. 0x51)
+17:02:07,844 [1] DEBUG PCUClient -   Set ServerAddress: PUDS_ERROR_OK (0xf1)
+17:02:07,845 [1] DEBUG PCUClient -   Set TIMEOUT_REQUEST: PUDS_ERROR_OK (2000)
+17:02:07,845 [1] DEBUG PCUClient -   Set TIMEOUT_REQUEST: PUDS_ERROR_OK (2000)
+17:02:10,351 [1] INFO PCUClient - *** UDS Service: RequestDownload ***
+17:02:10,352 [1] DEBUG PCUClient - SvcRequestDownload: PUDS_ERROR_OK
+17:02:10,376 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:02:10,377 [1] INFO PCUClient - UDS REQUEST   TPUDSMsg : SI:PUDS_SI_RequestDownload, SA:F1, TA:01, RA:0x00, Result:PUDS_RESULT_N_OK - OK !
+	LEN: 11, DATA: [34-00-44-00-01-00-20-00-00-00-80]
+17:02:10,378 [1] INFO PCUClient - UDS RESPONSE  TPUDSMsg : SI:RESPONSE_PUDS_SI_RequestDownload, SA:01, TA:F1, RA:0x00, Result:PUDS_RESULT_N_OK - OK !
+	LEN: 4, DATA: [74-20-00-22]
+17:02:10,378 [1] INFO PCUClient - Max Block Size: 34
+17:02:10,379 [1] DEBUG PCUClient - SvcTransferData: PUDS_ERROR_OK
+17:02:10,432 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:02:10,432 [1] DEBUG PCUClient - Calculating a checksum for the transmitted data
+17:02:10,432 [1] INFO PCUClient - Checksum matches 0xF0==0xF0
+17:02:10,433 [1] INFO PCUClient - blockIndex matches 0x01==0x01
+17:02:10,433 [1] DEBUG PCUClient - SvcTransferData: PUDS_ERROR_OK
+17:02:10,487 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:02:10,487 [1] DEBUG PCUClient - Calculating a checksum for the transmitted data
+17:02:10,487 [1] INFO PCUClient - Checksum matches 0xF0==0xF0
+17:02:10,487 [1] INFO PCUClient - blockIndex matches 0x02==0x02
+17:02:10,488 [1] DEBUG PCUClient - SvcTransferData: PUDS_ERROR_OK
+17:02:10,547 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:02:10,547 [1] DEBUG PCUClient - Calculating a checksum for the transmitted data
+17:02:10,548 [1] INFO PCUClient - Checksum matches 0xF0==0xF0
+17:02:10,548 [1] INFO PCUClient - blockIndex matches 0x03==0x03
+17:02:10,551 [1] DEBUG PCUClient - SvcTransferData: PUDS_ERROR_OK
+17:02:10,609 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:02:10,609 [1] DEBUG PCUClient - Calculating a checksum for the transmitted data
+17:02:10,611 [1] INFO PCUClient - Checksum matches 0xF0==0xF0
+17:02:10,612 [1] INFO PCUClient - blockIndex matches 0x04==0x04
+17:02:10,613 [1] INFO PCUClient - *** UDS Service: RequestTransferExit ***
+17:02:10,614 [1] DEBUG PCUClient - SvcRequestTransferExit: PUDS_ERROR_OK
+17:02:10,622 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:02:10,622 [1] INFO PCUClient - UDS REQUEST   TPUDSMsg : SI:PUDS_SI_RequestTransferExit, SA:F1, TA:01, RA:0x00, Result:PUDS_RESULT_N_OK - OK !
+	LEN: 1, DATA: [37]
+17:02:10,624 [1] INFO PCUClient - UDS RESPONSE  TPUDSMsg : SI:RESPONSE_PUDS_SI_RequestTransferExit, SA:01, TA:F1, RA:0x00, Result:PUDS_RESULT_N_OK - OK !
+	LEN: 1, DATA: [77]
+17:02:10,626 [1] DEBUG PCUClient - ALL Transmissions succeeded !
+17:02:10,627 [1] DEBUG PCUClient - Press <Enter> to quit...
+17:15:38,788 [1] INFO PCUClient - Starting UDS Client Test
+17:15:39,021 [1] DEBUG PCUClient - Initialize UDS: PUDS_ERROR_OK (chan. 0x51)
+17:15:39,022 [1] DEBUG PCUClient -   Set ServerAddress: PUDS_ERROR_OK (0xf1)
+17:15:39,022 [1] DEBUG PCUClient -   Set TIMEOUT_REQUEST: PUDS_ERROR_OK (2000)
+17:15:39,023 [1] DEBUG PCUClient -   Set TIMEOUT_REQUEST: PUDS_ERROR_OK (2000)
+17:15:43,286 [1] INFO PCUClient - *** UDS Service: RequestDownload ***
+17:15:43,287 [1] DEBUG PCUClient - SvcRequestDownload: PUDS_ERROR_OK
+17:15:43,310 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:15:43,312 [1] INFO PCUClient - UDS REQUEST   TPUDSMsg : SI:PUDS_SI_RequestDownload, SA:F1, TA:01, RA:0x00, Result:PUDS_RESULT_N_OK - OK !
+	LEN: 11, DATA: [34-00-44-00-01-00-20-00-00-00-80]
+17:15:43,312 [1] INFO PCUClient - UDS RESPONSE  TPUDSMsg : SI:RESPONSE_PUDS_SI_RequestDownload, SA:01, TA:F1, RA:0x00, Result:PUDS_RESULT_N_OK - OK !
+	LEN: 4, DATA: [74-20-00-22]
+17:15:43,312 [1] INFO PCUClient - Max Block Size: 34
+17:15:43,314 [1] DEBUG PCUClient - SvcTransferData: PUDS_ERROR_OK
+17:15:43,366 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:15:43,367 [1] DEBUG PCUClient - Calculating a checksum for the transmitted data
+17:15:43,367 [1] INFO PCUClient - Checksum matches 0xF0==0xF0
+17:15:43,368 [1] INFO PCUClient - blockIndex matches 0x01==0x01
+17:15:43,368 [1] DEBUG PCUClient - SvcTransferData: PUDS_ERROR_OK
+17:15:43,424 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:15:43,424 [1] DEBUG PCUClient - Calculating a checksum for the transmitted data
+17:15:43,424 [1] INFO PCUClient - Checksum matches 0xF0==0xF0
+17:15:43,424 [1] INFO PCUClient - blockIndex matches 0x02==0x02
+17:15:43,424 [1] DEBUG PCUClient - SvcTransferData: PUDS_ERROR_OK
+17:15:43,484 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:15:43,484 [1] DEBUG PCUClient - Calculating a checksum for the transmitted data
+17:15:43,484 [1] INFO PCUClient - Checksum matches 0xF0==0xF0
+17:15:43,485 [1] INFO PCUClient - blockIndex matches 0x03==0x03
+17:15:43,486 [1] DEBUG PCUClient - SvcTransferData: PUDS_ERROR_OK
+17:15:43,545 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:15:43,545 [1] DEBUG PCUClient - Calculating a checksum for the transmitted data
+17:15:43,546 [1] INFO PCUClient - Checksum matches 0xF0==0xF0
+17:15:43,546 [1] INFO PCUClient - blockIndex matches 0x04==0x04
+17:15:43,550 [1] INFO PCUClient - *** UDS Service: RequestTransferExit ***
+17:15:43,551 [1] DEBUG PCUClient - SvcRequestTransferExit: PUDS_ERROR_OK
+17:15:43,559 [1] DEBUG PCUClient - WaitForService: PUDS_ERROR_OK
+17:15:43,559 [1] INFO PCUClient - UDS REQUEST   TPUDSMsg : SI:PUDS_SI_RequestTransferExit, SA:F1, TA:01, RA:0x00, Result:PUDS_RESULT_N_OK - OK !
+	LEN: 1, DATA: [37]
+17:15:43,560 [1] INFO PCUClient - UDS RESPONSE  TPUDSMsg : SI:RESPONSE_PUDS_SI_RequestTransferExit, SA:01, TA:F1, RA:0x00, Result:PUDS_RESULT_N_OK - OK !
+	LEN: 1, DATA: [77]
+17:15:43,561 [1] DEBUG PCUClient - ALL Transmissions succeeded !
+17:15:43,562 [1] DEBUG PCUClient - Press <Enter> to quit...

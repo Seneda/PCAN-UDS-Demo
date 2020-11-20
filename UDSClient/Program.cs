@@ -1250,20 +1250,20 @@ namespace PCUClient
         static void testDownloadFile(TPUDSCANHandle Channel, TPUDSNetAddrInfo N_AI, int startAddress, byte[] data)
         {
             int status = 0;
-            int blockSize = 0;
-            status = SendServiceRequestDownload(Channel, N_AI, startAddress, data.Length, out blockSize);
+            int udsBlockSize = 0;
+            status = SendServiceRequestDownload(Channel, N_AI, startAddress, data.Length, out udsBlockSize);
             if (status != 0)
             {
                 log.Warn("SendServiceRequestDownload Failed");
                 return;
             }
-
+            int dataBlockSize = udsBlockSize - 2;
             byte[] dataBlock;
-            for (int i = 0; i < data.Length; i += blockSize)
+            for (int i = 0; i < data.Length; i += dataBlockSize)
             {
-                dataBlock = new byte[Math.Min(blockSize, data.Length - i)];
+                dataBlock = new byte[Math.Min(dataBlockSize, data.Length - i)];
                 Array.Copy(data, i, dataBlock, 0, dataBlock.Length);
-                byte blockIndex = (byte)(((i / blockSize) + 1) % 256);
+                byte blockIndex = (byte)(((i / dataBlockSize) + 1) % 256);
                 status = SendServiceTransferData(Channel, N_AI, ref dataBlock, blockIndex, true);
 
                 if (status != 0)
@@ -1363,7 +1363,7 @@ namespace PCUClient
 
         }
 
-            private static int SendServiceRequestTransferExit(ushort Channel, TPUDSNetAddrInfo N_AI)
+        private static int SendServiceRequestTransferExit(ushort Channel, TPUDSNetAddrInfo N_AI)
         {
             TPUDSStatus status;
             TPUDSMsg requestMsg = new TPUDSMsg();
